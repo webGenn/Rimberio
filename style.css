@@ -1,0 +1,279 @@
+/*---------------------Removing Default Styles-------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+#underUpdate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1200;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    #navigation,#header,#section,#footer{
+        display: none;
+    }
+    #underUpdate{
+        display: block;
+    }
+    #underUpdate h1, #underUpdate h2{
+        font-size: 18px;
+    }
+}
+/*-------------------------------Navigation--------------------------*/
+
+nav{
+    padding: 5px;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 100;
+}
+nav img{
+    height: 120px;
+    width: 150px;
+    border-radius: 50%;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    line-height: 120px;
+    color: white;
+    font-family: 'Poppins';
+    transition: all 0.3s linear;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    padding: 5px 8px;
+}
+nav .textbox{
+    width: 700px;
+}
+nav ul li a:hover{
+    color: yellow;
+}
+nav .cart i{
+    line-height: 120px;
+    font-size: 20px;
+}
+nav .sin_log{
+    line-height: 120px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins';
+    padding: 10px 20px;
+    background-color: #B83C08;
+    border-radius: 10px;
+}
+
+/* --------------------------Hero Section--------------------------- */
+
+.slider{
+    height: 400px;
+    overflow: hidden;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------------------------advert--------------------------------- */
+
+.dts{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.dts h2{
+    font-size: 25px;
+}
+.advert{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.advert .container{
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 3px wheat;
+    border-radius: 10px;
+}
+.advert .container img{
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------------------------Products------------------------ */
+
+.products{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .card{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.products .card h5{
+    margin-bottom: 3px;
+}
+.products .card img{
+    height: 380px;
+}
+.products .card .star{
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 3px;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+.products .card p{
+    color: black;
+    margin-bottom: 3px;
+    margin-top: 7px;
+    font-family: 'Roboto';
+    font-weight: normal;
+}
+.products .card a{
+   margin-top: 6px;
+}
+
+/* -------------------------------Company------------------------------ */
+
+.movingCom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    width: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.movingCom::-webkit-scrollbar{
+    display: none;
+}
+.movingCom .con{
+    display: inline-block;
+    white-space: nowrap;
+    animation: move 15s linear infinite;
+}
+.movingCom .con img{
+    margin-right: 15px;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* ------------------------------Payment----------------------------------- */
+
+.form_Parent{
+    margin-top: 20px;
+}
+.form_Parent .head{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(25, 156, 208);
+    margin-bottom: 20px;
+}
+.form_Parent .head h1{
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-family: 'Poppins';
+    color: white;
+}
+.error{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* ---------------------------------Terms and Conditions------------------------------- */
+
+.t_c{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin: auto;
+}
+.t_c h1{
+    margin-bottom: 5px;
+}
+.t_c ol li{
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
+
+
+/* ---------------------------------Footer---------------------------------- */
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+.containerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+}
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+    margin-bottom: 20px;
+}
+.footer-left p,
+.footer-center ul,
+.footer-right p {
+    margin-bottom: 10px;
+}
+.footer-center ul li {
+    list-style-type: none;
+}
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-center ul li a:hover {
+    text-decoration: underline;
+}
