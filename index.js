@@ -9,7 +9,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Causal red t-shirt: comfy, versatile, stylish—perfect for everyday wear and flair.",
     Price: 244,
-    Img: "../images/redTshirt2.jpg"
+    Img: "images/redTshirt2.jpg"
 },{
     id: 2,
     name: "Casual Blue T-Shirt",
@@ -17,7 +17,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Blue t-shirt: serene hue, reminiscent of tranquil skies, a calming presence.",
     Price: 520,
-    Img: "../images/blackshirt4.jpg"  
+    Img: "images/blackshirt4.jpg"  
 },{
     id: 3,
     name: "Casual Black T-Shirt",
@@ -25,7 +25,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Black t-shirt: sleek, timeless, effortlessly chic, a staple for any wardrobe.",
     Price: 685,
-    Img: "../images/blackTshirt3.jpg"
+    Img: "images/blackTshirt3.jpg"
 },{
     id: 4,
     name: "Formal Skyblue Shirt",
@@ -33,7 +33,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Formal sky-blue shirt: refined elegance meets subtle sophistication, a sartorial statement.",
     Price: 975,
-    Img: "../images/shirt4.jpg"
+    Img: "images/shirt4.jpg"
 },{
     id: 5,
     name: "Half Sleeve T-Shirt",
@@ -41,7 +41,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Half-sleeve white and blue mix tee: breezy blend, casual charm, perfect summer attire.",
     Price: 500,
-    Img: "../images/shirt2.jpg"
+    Img: "images/shirt2.jpg"
 },{
     id: 6,
     name: "Full Sleeve Shirt",
@@ -49,7 +49,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Full sleeve blue dotted shirt: polished with a playful touch, refined yet whimsical.",
     Price: 1100,
-    Img: "../images/shirt1.jpg"
+    Img: "images/shirt1.jpg"
 },{
     id: 7,
     name: "Half Sleeve Shirt",
@@ -57,7 +57,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Half-sleeve white designed shirt: understated elegance adorned with intricate patterns, versatile sophistication.",
     Price: 789,
-    Img: "../images/shirt6.jpg"
+    Img: "images/shirt6.jpg"
 },{
     id: 8,
     name: "Formal Blue Shirt",
@@ -65,7 +65,7 @@ let pdItem = [{
     starsBlank: "☆",
     desc: "Formal blue shirt: epitome of professionalism, timeless elegance, wardrobe essential.",
     Price: 300,
-    Img: "../images/shirt7.jpg"
+    Img: "images/shirt7.jpg"
 }]
 
 const generateCard = () =>{
